@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boka våra rum!">
+    <title>Luxury Hotel - Boka</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img id="Logo" src="img/Logo.webp" alt="The logo of luxury hotel">
+        <h1 id="Name" class="stylized">Luxury Hotels!</h1>
+    <section id="NavSection" class="stylized">
+            <nav id="NavBar">
+                <a href="index.html" class="MenuLinks"><b>Hem</b></a>
+                <a href="boka.html" class="MenuLinks"><b>Boka</b></a>
+                <a href="hitta.html" class="MenuLinks"><b>Hitta</b></a>
+                <a href="kontakt.html" class="MenuLinks"><b>Kontakt</b></a>
+            </nav>
+    </section>
+</header>
+    <section id="Page">
+        <article id="art1" class="stylized">
+            <h1 class="padded">
+                Kontakt Uppgifter:
+            </h1>
+            <label class="padded"> Namn
+                <input id="namn" type="text" placeholder="Namn"  required>
+            </label>
+            <label class="padded"> Email
+                <input id="email" type="email" placeholder="Email"  required>
+            </label>
+            <label class="padded"> Nummer
+                <input id="nummer" type="number" min="0" max="9999999999" placeholder="Nummer"  required>
+            </label>
+            <h1 class="padded">
+                Rumstyp:
+            </h1>
+            <label class="padded">Basic
+                <input type="radio" id="Basic" value="1" name="Rumstyp">
+            </label>
+            <label class="padded">Premium
+                <input type="radio" id="Premium" value="2" name="Rumstyp">
+            </label>
+            <label class="padded">Luxury
+                <input type="radio" id="Luxury" value="3" name="Rumstyp">
+            </label>
+            <h1 class="padded">
+                Service:
+            </h1>
+            <select class="padded" id="Service">
+                <option value="">(Välj ett)</option>
+                <option value="1" id="BasicService">Basic</option>
+                <option value="2" id="VIPService">VIP</option>
+            </select>
+            <br>
+            <input type="submit">
+            <br>
+        </article>
+        <article id="art2" class="stylized">
+            <h1 class="padded">
+                Vi offrar!
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quaerat similique ipsam voluptatibus aut saepe, veniam dignissimos rerum nisi inventore perspiciatis ex vel. Inventore reprehenderit corporis incidunt quos magni perspiciatis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, ad non impedit exercitationem consequuntur sapiente eius doloremque unde nisi itaque quo alias labore magnam, repellendus vitae voluptatibus, tempora amet error.
+            </p>
+            <label>Övriga önskemål:</label>
+            <textarea id="Wishes">
+            </textarea>
+            <input type="submit">
+        </article>
+    </section>
+    <footer class="stylized">
+        <p>Luxury Hotel - Storgatan 12 - 123 45 Storstad - +1 23-456 78 90</p>
+    </footer>
+    
+</body>
+</html>

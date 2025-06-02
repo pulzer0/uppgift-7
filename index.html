@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Välkommen till Luxury Hotels webbsida!">
+    <title>Luxury Hotel - Hem</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+            <img id="Logo" src="img/Logo.webp" alt="The logo of luxury hotel">
+            <h1 id="Name" class="stylized">Luxury Hotels!</h1>
+        <section id="NavSection" class="stylized">
+                <nav id="NavBar">
+                    <a href="index.html" class="MenuLinks"><b>Hem</b></a>
+                    <a href="boka.html"  class="MenuLinks"><b>Boka</b></a>
+                    <a href="hitta.html"  class="MenuLinks"><b>Hitta</b></a>
+                    <a href="kontakt.html"  class="MenuLinks" ><b>Kontakt</b></a>
+                </nav>
+        </section>
+    </header>
+    <section id="Page">
+        <article id="art1" class="stylized">
+            <h1 class="padded">
+                Välkommen!
+            </h1>
+            <p class="padded">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis eveniet qui quidem, consequatur quisquam corrupti expedita saepe quis consectetur voluptates odit assumenda dolores numquam hic asperiores maxime temporibus quod sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus non, officia dolores delectus reiciendis aut repellat ipsum minima, quisquam quam, veritatis odio voluptates laborum quae provident sed! Expedita, blanditiis nemo.
+            </p>
+            <h1 class="padded">
+                Öppet tider! </h1>
+                <p class="padded">
+                Måndag 9:00 - 19:00 <br>
+                Tisdag 8:00 - 19:00 <br>
+                Onsdag 6:00 - 19:00 <br>
+                Torsdag 9:00 - 19:00 <br>
+                Fredag 9:00 - 19:00 <br> <br>
+                Helger håller vi stängt!
+            </p>
+        </article>
+        <article id="art2" class="stylized">
+            <h1 class="padded">
+            Våra vackra rum!</h1>       
+            <div class="slideshow-container"></div>
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="img/Hotelroom.webp" alt="Basic Rum" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="img/Hotelroom2.webp" alt="Premium Rum" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="img/Hotelroom3.webp" alt="Luxury Rum" style="width:100%">
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+            <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>        
+        </article>
+    </section>
+    <footer class="stylized">
+        <p>Luxury Hotel - Storgatan 12 - 123 45 Storstad - +1 23-456 78 90</p>
+    </footer>
+    
+</body>
+</html>
